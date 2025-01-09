@@ -1,3 +1,11 @@
+import '@/app/ui/global.css';
+import {inter} from '@/app/ui/fonts';
+
+export const metadata = {
+  title: 'Acme',
+  description: 'Acme is a Next.js Learn course',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   );
 }
